@@ -11,7 +11,7 @@ def parse_args():
     parser.add_argument('--rna_h5ad', type=str, default="data/10x-Multiome-Pbmc10k-RNA.h5ad", help="Path to RNA h5ad file")
     parser.add_argument('--atac_h5ad', type=str, default="data/10x-Multiome-Pbmc10k-ATAC.h5ad", help="Path to ATAC h5ad file")
     parser.add_argument('--gtf_file', type=str, default="data/gencode.vM25.chr_patch_hapl_scaff.annotation.gtf.gz", help="Path to GTF file")
-    parser.add_argument('--grn_file', type=str, default="data/human_grns.csv", help="Path to GRN file")
+    parser.add_argument('--grn_file', type=str, help="Path to GRN file")
     parser.add_argument('--data_mode', type=str, default="match", help="Dataset match or unmatch")
     
     # Optional embeddings
