@@ -36,15 +36,15 @@ The following input files are required for running the models:
 
 ## Command-Line Examples for Each Mode
 
-### Embedding Mode (matched data)
+### Embedding mode on your own datasets (unmatched data)
 ```bash
 python main.py –rna_h5ad <path_to_rna_h5ad> –atac_h5ad <path_to_atac_h5ad> –gtf_file <path_to_gtf_file> –mode embedding –data_mode match
 ```
-### Clustering Mode (unmatched data)
+### Clustering mode on example PBMC 10k datasets (matched data)
 ```bash
-python main.py –rna_h5ad <path_to_rna_h5ad> –atac_h5ad <path_to_atac_h5ad> –gtf_file <path_to_gtf_file> –mode cluster –data_mode unmatch –num_clusters 19
+python main.py –mode cluster –data_mode unmatch –num_clusters 19
 ```
-### GRN Mode (matched data)
+### GRN mode on your own datasets (matched data)
 ```bash
 python main.py –rna_h5ad <path_to_rna_h5ad> –atac_h5ad <path_to_atac_h5ad> –gtf_file <path_to_gtf_file> –grn_file <path_to_grn_file> –mode grn –data_mode match
 ```
