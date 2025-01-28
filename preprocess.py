@@ -28,6 +28,9 @@ def preprocess(args):
     
     scglue.data.lsi(atac, n_components=args.emb_dim, n_iter=15)
     
+    rna.write("data/rna-pp.h5ad", compression="gzip")
+    atac.write("data/atac-pp.h5ad", compression="gzip")
+    
     return rna, atac
     
 def pre_match(args, rna, atac):
