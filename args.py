@@ -4,7 +4,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description="Arguments for training and data processing")
     
     # Mode Choice
-    parser.add_argument('--mode', type=str, default="grn", help="Training mode")
+    parser.add_argument('--mode', type=str, default="embedding", help="Training mode")
     parser.add_argument('--num_clusters', type=int, help="Number of cluster size")
 
     # RNA, ATAC, GTF and GRN file paths and mode
